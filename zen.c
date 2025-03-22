@@ -8,6 +8,7 @@
 #include <dirent.h>
 #include <readline/readline.h>
 #include <readline/history.h>
+#include <dlfcn.h>
 
 #define MAX_INPUT 1024
 #define MAX_ARGS 64
