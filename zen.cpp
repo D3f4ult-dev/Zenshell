@@ -217,8 +217,7 @@ void execute_command(vector<string> args) {
 
     // Handle built-in commands
     if (args[0] == "cd") {
-        if (args.size() < 2) {
-            // Change to home directory if no argument
+        if (args.size() < 2 || args[1] == "~") {
             if (chdir(home_dir.c_str()) != 0) {
                 perror("cd");
             }
